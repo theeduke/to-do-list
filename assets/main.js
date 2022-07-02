@@ -160,3 +160,4 @@ todoList.addEventListener('click', (e)=>{
 addNewTodoButton.addEventListener('click', addNewTodo);
 createTodoButton.addEventListener('click', addTodo);
 updateTodoButton.addEventListener('click', updateTodo);
+const closeIcon = document.querySelector(".fa-times");
