@@ -4,43 +4,49 @@
       "id": "z3sts7-ab79-tvf0-0ru3eo",
       "timestamp": "2022-6-27 23:29:58",
       "body": "Take out trash",
-      "status": "Not complete"
+      "status": "Complete"
     },
     {
       "id": "oeuxrk-pgoj-h7m6-u2pc1f",
-      "timestamp": "2022-6-27 23:31:27",
-      "body": "Milk the cows",
-      "status": "Not complete"
+      "timestamp": "2022-7-2 22:20:40",
+      "body": "Milk the cow",
+      "status": "Complete"
     },
     {
       "id": "fjyaey-yznq-mg0z-gfagpz",
       "timestamp": "2022-6-27 23:36:42",
       "body": "Kenya One",
-      "status": "Not complete"
+      "status": "Complete"
     },
     {
       "id": "m80zzp-qyi1-9b0j-ngnnbw",
       "timestamp": "2022-6-28 7:8:33",
-      "body": "Do the axios assignment",
-      "status": "Not complete"
+      "body": "Do the axios assignments",
+      "status": "Complete"
     },
     {
       "id": "52e7lw-irek-z10l-84goyg",
-      "timestamp": "2022-7-1 12:10:23",
-      "body": "shopping",
+      "timestamp": "2022-7-2 22:16:0",
+      "body": "shop",
       "status": "Not complete"
     },
     {
       "id": "uo3mxd-tcx9-jjuh-2a0t5j",
       "timestamp": "2022-7-1 12:25:2",
       "body": "fishing",
-      "status": "Not complete"
+      "status": "Complete"
     },
     {
       "id": "3b5krz-l0wh-upwj-nxtj4k",
-      "timestamp": "2022-7-1 12:33:8",
-      "body": "listen to music",
-      "status": "Not complete"
+      "timestamp": "2022-7-2 22:16:42",
+      "body": "listening to music",
+      "status": "Complete"
+    },
+    {
+      "id": "egj0e0-53d0-okrf-5s66f2",
+      "timestamp": "2022-7-1 22:50:29",
+      "body": "cooking",
+      "status": "Complete"
     }
   ]
 }

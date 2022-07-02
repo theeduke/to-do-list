@@ -106,42 +106,26 @@ const addNewTodo = () => {
 }
 
 const deleteTodo = (itemId) => {
-	Todos = Todos.filter(todo => todo.id != itemId);
-	displayAllTodos();
-}
+	axios.delete(`http://localhost:8000/posts/${itemId}`);
+};
 
 const updateTodo = () => {
-	const todos = Todos.map(todo=>{
-		if(todo.id === idField.value){
-			todo.status = "Not complete";
-			todo.body = bodyField.value;
-			todo.timestamp = timeField.value;
-			return todo;
-		}else{
-			return todo;
-		}
-	})
+	const id = idField.value;
+	const timestamp = timeField.value;
+	const body = bodyField.value;
+	axios.patch(`http://localhost:8000/posts/${id}`, { id, timestamp, body });
+
 	Todos = todos;
 	idField.value = "";
 	timeField.value = "";
 	bodyField.value = "";
-	displayAllTodos();
-	updateTodoButton.style.display = "none"
-	createTodoButton.style.display = "block"
-}
+	updateTodoButton.style.display = "none";
+	createTodoButton.style.display = "block";
+};
 
 const markTodoAsComplete = (itemId) => {
-	const todos = Todos.map(todo=>{
-		if(todo.id === itemId){
-			todo.status = "Complete";
-			return todo;
-		}else{
-			return todo;
-		}
-	})
-	Todos = todos;
-	displayAllTodos();
-}
+	axios.patch(`http://localhost:8000/posts/${itemId}`, { status: "Complete" });
+};
 
 todoList.addEventListener('click', (e)=>{
 
