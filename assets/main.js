@@ -52,17 +52,6 @@ const displayAllTodos = () => {
 
 displayAllTodos();
 
-// const addTodo = () => {
-// 	const id = idField.value;
-// 	const timestamp = timeField.value;
-// 	const body = bodyField.value;
-// 	const status = "Not complete";
-// 	Todos.push({id,timestamp, body, status})
-// 	idField.value = "";
-// 	timeField.value = "";
-// 	bodyField.value = "";
-// 	displayAllTodos();
-// }
 
 const addTodo = () => {
 	const id = idField.value;
@@ -119,6 +108,7 @@ const updateTodo = () => {
 	idField.value = "";
 	timeField.value = "";
 	bodyField.value = "";
+	displayAllTodos()
 	updateTodoButton.style.display = "none";
 	createTodoButton.style.display = "block";
 };
